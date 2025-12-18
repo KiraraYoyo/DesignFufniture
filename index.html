@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link rel="icon" type="image/png" href="pages/assets/логотип.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Furniture | Дизайнерская мебель</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="pages/assets/логотип.png" height="50em">
+                    <span>Design<span class="logo-accent">Furniture</span></span>
+                </a>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li class="nav-item"><a href="pages/modern.html" class="nav-link">Модерн</a></li>
+                        <li class="nav-item"><a href="pages/vintage.html" class="nav-link">Винтаж</a></li>
+                        <li class="nav-item"><a href="pages/minimalism.html" class="nav-link">Минимализм</a></li>
+                        <li class="nav-item"><a href="pages/loft.html" class="nav-link">Лофт</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="burger-menu" id="burgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный контент -->
+    <main class="main">
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Дизайнерская мебель <span class="highlight">как искусство</span></h1>
+                    <p class="hero-text">Исследуйте мир уникальной мебели, где функциональность встречается с эстетикой, а каждый предмет рассказывает свою историю.</p>
+                    <a href="#styles" class="btn-hero">Исследовать стили</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "О сайте" -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">О проекте</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Этот сайт создан для ценителей <strong>уникального дизайна</strong> и тех, кто ищет вдохновение для своего интерьера. Мы рассказываем о самых интересных дизайнерских решениях, материалах и тенденциях.</p>
+                        <p>Здесь вы найдете подборки мебели в различных стилях — от классического <em>винтажа</em> до футуристического <em>модерна</em>, от лаконичного <em>минимализма</em> до брутального <em>лофта</em>.</p>
+                        <blockquote class="quote">
+                            "Хороший дизайн очевиден. Отличный дизайн — незаметен."
+                            <cite>— Джо Спран</cite>
+                        </blockquote>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/20a96a138754061.Y3JvcCwxNzg5LDE0MDAsOCww.png" alt="Процесс дизайна мебели" width="500" height="350">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция со стилями -->
+        <section class="styles" id="styles">
+            <div class="container">
+                <h2 class="section-title">Стили мебели</h2>
+                <div class="styles-grid">
+                    <article class="style-card">
+                        <div class="card-image">
+                            <img src="https://pic.rutubelist.ru/playlist/296d9b6a-b5a3-11ef-8673-02420a000b3f.jpg" alt="Модерн" width="400" height="250">
+                        </div>
+                        <div class="card-content">
+                            <h3>Модерн</h3>
+                            <p>Современные линии, инновационные материалы и смелые решения.</p>
+                            <a href="pages/modern.html" class="btn-card">Подробнее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="style-card">
+                        <div class="card-image">
+                            <img src="https://cs1.livemaster.ru/storage/27/12/bbef2e08937c704de5c26e4995up--vintazh-antikvarnaya-mebel-bolshoj-assortiment-na-vybor.jpg" alt="Винтаж" width="400" height="250">
+                        </div>
+                        <div class="card-content">
+                            <h3>Винтаж</h3>
+                            <p>Ностальгия, антиквариат и мебель с историей.</p>
+                            <a href="pages/vintage.html" class="btn-card">Подробнее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="style-card">
+                        <div class="card-image">
+                            <img src="https://www.reflexangelo.com/wp-content/uploads/2021/06/6076_luce-scrivania_1-cassettiera.jpg" alt="Минимализм" width="400" height="250">
+                        </div>
+                        <div class="card-content">
+                            <h3>Минимализм</h3>
+                            <p>Лаконичность, функциональность и ничего лишнего.</p>
+                            <a href="pages/minimalism.html" class="btn-card">Подробнее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="styles-grid">
+                    <article class="style-card">
+                        <div class="card-image">
+                            <img src="https://kovanni.ru/wp-content/uploads/2021/08/image.jpg" alt="Лофт" width="400" height="250">
+                        </div>
+                        <div class="card-content">
+                            <h3>Лофт</h3>
+                            <p>Индустриальные элементы, открытые пространства и брутальная эстетика.</p>
+                            <a href="pages/loft.html" class="btn-card">Подробнее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с фактами -->
+        <section class="facts">
+            <div class="container">
+                <h2 class="section-title">Интересные факты о мебели</h2>
+                <div class="facts-list">
+                    <div class="fact-item">
+                        <i class="fas fa-history fact-icon"></i>
+                        <h3>Древнейшая мебель</h3>
+                        <p>Самые древние образцы мебели найдены в Египте и датируются 3100-2500 гг. до н.э.</p>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-recycle fact-icon"></i>
+                        <h3>Экологичный тренд</h3>
+                        <p>Более 70% современных дизайнеров используют переработанные материалы.</p>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-cogs fact-icon"></i>
+                        <h3>Умная мебель</h3>
+                        <p>С 2020 года рынок умной мебели вырос на 40% ежегодно.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>DesignFurniture</h3>
+                    <p>Информационный сайт о дизайнерской мебели. Делимся знаниями и вдохновением.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="pages/modern.html">Модерн</a></li>
+                        <li><a href="pages/vintage.html">Винтаж</a></li>
+                        <li><a href="pages/minimalism.html">Минимализм</a></li>
+                        <li><a href="pages/loft.html">Лофт</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <address>
+                        <p><a href="tel:+79991234567"><i class="fas fa-phone"></i> +7 (999) 123-45-67</a></p>
+                        <p><a href="mailto:info@designfurniture.ru"><i class="fas fa-envelope"></i> info@designfurniture.ru</a></p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DesignFurniture. Некоторые права защищены.</p>
+                <p>Сайт создан с использованием HTML5, CSS3 и JavaScript.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="burger-menu.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
