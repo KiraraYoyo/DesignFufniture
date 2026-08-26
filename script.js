@@ -1,9 +1,5 @@
 // Основные интерактивные функции сайта
 document.addEventListener('DOMContentLoaded', function () {
-
-    /* ==========================================
-       1. ПЛАВНАЯ ПРОКРУТКА ДЛЯ ЯКОРНЫХ ССЫЛОК
-       ========================================== */
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -20,10 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-    /* ==========================================
-       2. ПЛАВНОЕ ПОЯВЛЕНИЕ ЭЛЕМЕНТОВ ПРИ СКРОЛЛЕ
-       ========================================== */
     const animatedElements = document.querySelectorAll('.style-card, .fact-item, .timeline-item');
 
     if (animatedElements.length > 0) {
@@ -43,10 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
         window.addEventListener('scroll', animateOnScroll);
         animateOnScroll(); // Проверка при загрузке страницы
     }
-
-    /* ==========================================
-       3. ИЗМЕНЕНИЕ ШАПКИ ПРИ СКРОЛЛЕ
-       ========================================== */
     const header = document.querySelector('.header');
     if (header) {
         window.addEventListener('scroll', function () {
@@ -59,13 +47,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
-    /* ==========================================
-       4. УСТАНОВКА ТЕКУЩЕГО ГОДА В ПОДВАЛЕ
-       ========================================== */
-    const currentYear = new Date().getFullYear();
-    const yearElements = document.querySelectorAll('.current-year');
-    yearElements.forEach(el => {
-        el.textContent = currentYear;
-    });
 });
